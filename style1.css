@@ -1,0 +1,217 @@
+body {
+}
+h1 {
+
+	text-align:center;
+	margin-top:70px;
+	font-family: Garamond;
+	font-size:45px;
+	color:#003300;
+	font-family: 'GowaRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+h2 {
+	text-align:center;
+	margin-bottom:30px;
+	font-family: Garamond;
+	font-size:35px;
+	color:#003300;
+	font-family: 'GowaRegular';
+    font-weight: normal;
+    font-style: normal;
+	border-style:double;
+	border-color:black;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding:10px;
+	border-radius: 20px;
+}
+p{
+	margin-left:70px;
+	margin-right:70px;
+	text-align:justify;
+	font-family: Garamond;
+	font-size:20px;
+	color:#ff80ff;
+	font-family: 'GowaRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+ul{
+	margin-left:290px;
+	margin-right:290px;
+	list-style-type:square;
+	font-size:18px;
+}
+li{
+	margin-bottom:5px;
+}
+li.gauche{
+	color:#cc0000;
+}
+li.droite{
+	color:#336600;
+}
+li.noir{
+	color:#000000;
+}
+a{
+	text-decoration:none;
+	color:#e600e6;
+}
+a:link{
+	color:#e600e6;
+}
+a:visited{
+	color:#b300b3;
+}
+a:hover{
+	color:#669900;
+}
+.tourne:hover {
+	transform:rotate(180deg);
+}	
+.rouge:hover {
+	color:#DC143C;
+}
+.barre {
+	text-decoration:line-through;
+	color:#669900;
+}	
+.grossir:hover {
+	font-size:25px;
+	color:black
+}	
+.transparent {
+	color:#eafaea;
+	text-align:center;
+}
+.voir:hover {
+	color:#669900;
+	text-align:center;
+}
+.voirt:hover {
+	color:#4da6ff;
+	text-align:center;
+}
+.ombre {
+	text-shadow: 2px 3px 3px green;
+	color: transparent;
+}
+.ombret {
+	text-shadow: 2px 3px 3px gray;
+	color: transparent;
+}
+.hovert:link{
+	color:#666699;
+}
+.hovert:visited{
+	color:#004d99;
+}
+.hovert:hover{
+	color:#e0e0eb;
+}
+.hoveri:link{
+	color:black;
+}
+.hoveri:visited{
+	color:black;
+}
+.hoveri:hover{
+   font-family: 'MayaRegular';
+   font-weight: normal;
+   font-style: normal;
+	color:#ffcc00;
+}
+.imagee{
+	text-align:right;
+}
+pre {
+	margin-left: 100px;
+}
+p.image{
+	text-align:center;
+}
+.index{
+	background-color:#ffffff;
+}
+.sommaire{
+	background-color:#ffffff;
+}
+.tweet{
+	background-color:#ffffff;
+	
+}
+.h2t{
+	color:blue;
+}
+.insta{
+	background-color:#ffffff;
+}
+.h2i{
+	color:purple;
+}
+.mail{
+	background-color:#ffffff;
+}
+.h2e{
+	color:red;
+}
+.reddit{
+	background-color:#ffffff;
+}
+.h2r{
+	color:#ff9933;
+}
+.wikipeadia{
+	background-color:#ffffff;
+}
+.journal{
+	background-color:#ffffff;
+	color:black;
+}
+.translate {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.translate::after {
+  content: attr(data-fr); 
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.translate:hover::after {
+  opacity: 1; 
+}
+
+.translate span {
+  transition: opacity 0.3s;
+}
+
+.translate:hover span {
+  opacity: 0; 
+}
+.ecrire{
+	font-family: "Georgia", serif;
+    font-size: 24px;
+    color: #333;
+    border-right: 2px solid black;
+    white-space: pre-wrap; 
+    overflow: hidden;
+    animation: ecrire 6s steps(40, end) forwards, clignoter 0.5s step-end infinite;
+}
+@keyframes ecrire {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes clignoter {
+    0%, 50%, 100% { border-color: black; }
+    25%, 75% { border-color: transparent; }
+}
